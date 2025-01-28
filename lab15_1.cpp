@@ -9,7 +9,7 @@ int main(){
 	char *y = &b;
 	int **z = &x;
 	cout << a <<" "<< b<<" "<<c<<" "<<x<<" "<<(void *)&y<<" "<<z<<endl;
-	cout << &a <<" "<<  (void *)&y<<" "<<(void *)&c<<" "<<&x<<" "<<&y<<" "<<&z<<endl;
+	cout << &a <<" "<<  (void *)&b<<" "<<(void *)&c<<" "<<&x<<" "<<&y<<" "<<&z<<endl;
 	c='F';
 	cout << a <<" "<< b<<" "<<c<<" "<<x<<" "<<(void *)&y<<" "<<z<<endl;
 	*y = 'W';
@@ -18,6 +18,7 @@ int main(){
 	cout << a <<" "<< b<<" "<<c<<" "<<x<<" "<<(void *)&y<<" "<<z<<endl;
 	**z = 7;
 	cout << a <<" "<< b<<" "<<c<<" "<<x<<" "<<(void *)&y<<" "<<z<<endl;
+
 
 	return 0;
 }
